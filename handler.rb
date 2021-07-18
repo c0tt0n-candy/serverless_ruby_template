@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require 'json'
 
-def hello(event:, context:)
+def hello(event:, _context:)
   {
     statusCode: 200,
     body: {
