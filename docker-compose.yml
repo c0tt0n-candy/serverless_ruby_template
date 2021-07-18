@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  serverless:
+    build: .
+    command: /bin/bash
+    env_file:
+      - .local.env
+    volumes:
+      - .:/myapp
+      - $HOME/.aws:/root/.aws
